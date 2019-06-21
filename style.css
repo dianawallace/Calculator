@@ -12,10 +12,26 @@ body {
     border: 1px solid gray;
     text-align: center;
     cursor: pointer;
-    font-size 32px;
+    font-size: 32px;
     font-weight: 100;
     padding-top: 3px;
 }
+
+.calc-btn:hover {
+    background-color: orange;
+}
+
+.row {
+    display: table;
+    table-layout: fixed;
+    width: 200px;
+}
+
+.column {
+    display: table-cell;
+}
+
+
 
 
 
