@@ -31,6 +31,31 @@ body {
     display: table-cell;
 }
 
+#calc-zero {
+    width: 52.66666667;
+    border-radius: 0 0 0 7px;
+}
+
+#calc-clear {
+    width: 52.66666667;
+}
+
+#calc-display-val {
+    height: 90px; 
+    color: white;
+    text-align: right;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-top: 1px solid gray;
+    font-size: 48px;
+    background-color: #383838;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 12px;
+    border-radius: 7px 7px 0 0;
+}
+
+
 
 
 
