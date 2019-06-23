@@ -55,8 +55,19 @@ body {
     border-radius: 7px 7px 0 0;
 }
 
+.calc-btn-operator {
+    background-color: darkslategray;
+    color: white;
+}
 
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
 
+#calc-equals {
+    border-radius: 0 0 7px 0;
+}
 
 
 
