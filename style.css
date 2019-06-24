@@ -69,5 +69,7 @@ h1 {
     border-radius: 0 0 7px 0;
 }
 
-
+#calc-parent {
+    margin-left: calc(50% - 100px);
+}
 
