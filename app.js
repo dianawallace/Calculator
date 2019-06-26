@@ -9,3 +9,13 @@ var sevenBtn = document.getElementById('calc-seven');
 var eightBtn = document.getElementById('calc-eight');
 var nineBtn = document.getElementById('calc-nine');
 var zeroBtn = document.getElementById('calc-zero');
+
+var decimalBtn = document.getElementById('calc-decimal');
+var clearBtn = document.getElementById('calc-clear');
+var backspaceBtn = document.getElementById('calc-backspace');
+var displayValElement = document.getElementById('calc-display-val');
+
+
+
+
+
