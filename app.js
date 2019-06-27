@@ -15,6 +15,8 @@ var clearBtn = document.getElementById('calc-clear');
 var backspaceBtn = document.getElementById('calc-backspace');
 var displayValElement = document.getElementById('calc-display-val');
 
+var calcNumBtns = document.getElementByClassName('calc-btn-num');
+var calcOperationsBtns = document.getElementByClassName('calc-btn-operator');
 
 
 
