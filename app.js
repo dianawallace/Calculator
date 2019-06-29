@@ -15,8 +15,16 @@ var clearBtn = document.getElementById('calc-clear');
 var backspaceBtn = document.getElementById('calc-backspace');
 var displayValElement = document.getElementById('calc-display-val');
 
+var displayVal = '0';
+var pendingVal;
+
 var calcNumBtns = document.getElementByClassName('calc-btn-num');
 var calcOperationsBtns = document.getElementByClassName('calc-btn-operator');
+
+var updateDisplayVal = (clickObj) => {
+    var btnText = clickObj.target.innerText;
+
+}
 
 for (let i = 0; i < calcNumBtns.length; i++) {
     calcNumBtns[i].addEventListener('click', updateDisplayVal, false);
