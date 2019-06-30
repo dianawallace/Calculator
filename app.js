@@ -17,6 +17,7 @@ var displayValElement = document.getElementById('calc-display-val');
 
 var displayVal = '0';
 var pendingVal;
+var evalStringArray = [];
 
 var calcNumBtns = document.getElementByClassName('calc-btn-num');
 var calcOperationsBtns = document.getElementByClassName('calc-btn-operator');
@@ -24,6 +25,11 @@ var calcOperationsBtns = document.getElementByClassName('calc-btn-operator');
 var updateDisplayVal = (clickObj) => {
     var btnText = clickObj.target.innerText;
 
+    if(displayVal === '0')
+        displayVal = '';
+
+    displayVal += btnText;
+    displayValElement.innerText = displayVal;
 }
 
 for (let i = 0; i < calcNumBtns.length; i++) {
