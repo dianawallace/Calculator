@@ -19,8 +19,8 @@ var displayVal = '0';
 var pendingVal;
 var evalStringArray = [];
 
-var calcNumBtns = document.getElementByClassName('calc-btn-num');
-var calcOperationsBtns = document.getElementByClassName('calc-btn-operator');
+var calcNumBtns = document.getElementsByClassName('calc-btn-num');
+var calcOperationsBtns = document.getElementsByClassName('calc-btn-operator');
 
 var updateDisplayVal = (clickObj) => {
     var btnText = clickObj.target.innerText;
@@ -35,8 +35,13 @@ var updateDisplayVal = (clickObj) => {
 for (let i = 0; i < calcNumBtns.length; i++) {
     calcNumBtns[i].addEventListener('click', updateDisplayVal, false);
 }
-for (let i = 0; i < calcNumBtns.length; i++) {
-    calcOperatorBtns[i].addEventListener('click', performOperation, false);
+//for (let i = 0; i < calcNumBtns.length; i++) {
+//    calcOperatorBtns[i].addEventListener('click', performOperation, false);
+//}
+
+clearBtn.onclick = () => {
+    displayVal = '0';
+    pendingVal = undefined;
+    evalStringArray = [];
+    displayValElement.innerHTML = displayVal;
 }
-
-
