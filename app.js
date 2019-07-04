@@ -32,6 +32,55 @@ var updateDisplayVal = (clickObj) => {
     displayValElement.innerText = displayVal;
 }
 
+var performOperation = (clickObj) => {
+    var operator = clickObj.target.innerText;
+
+    switch (operator) {
+        case '+':
+            pendingVal = displayVal;
+            displayVal = '0';
+            displayValElement.innerText = displayVal;
+            evalStringArray.push(pendingVal);
+            evalStringArray.push('+');
+            break;
+
+        case '-':
+            pendingVal = displayVal;
+            displayVal = '0';
+            displayValElement.innerText = displayVal;
+            evalStringArray.push(pendingVal);
+            evalStringArray.push('-');
+            break;
+
+        case 'x':
+            pendingVal = displayVal;
+            displayVal = '0';
+            displayValElement.innerText = displayVal;
+            evalStringArray.push(pendingVal);
+            evalStringArray.push('*');
+            break;
+
+        case '/':
+            pendingVal = displayVal;
+            displayVal = '0';
+            displayValElement.innerText = displayVal;
+            evalStringArray.push(pendingVal);
+            evalStringArray.push('/');
+            break;
+
+        case '=':
+            evalStringArray.push(displayVal);
+            var evaluation = eval(evalStringArray.join(''));
+            displayVal = evaluation + '';
+            displayValElement.innerText = displayVal;
+            evalStringArray = [];
+            break;
+
+        default: 
+            break;
+    }
+}
+
 for (let i = 0; i < calcNumBtns.length; i++) {
     calcNumBtns[i].addEventListener('click', updateDisplayVal, false);
 }
@@ -56,3 +105,4 @@ decimalBtn.onclick = () => {
         displayVal += '.';
     displayValElement.innerText = displayVal;
 }
+
