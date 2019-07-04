@@ -51,3 +51,8 @@ backspaceBtn.onclick = () => {
     displayVal = displayVal.slice(0, lengthOfDisplayVal - 1);
     displayValElement.innerText = displayVal;
 }   
+decimalBtn.onclick = () => {
+    if(!displayVal.includes('.'))
+        displayVal += '.';
+    displayValElement.innerText = displayVal;
+}
