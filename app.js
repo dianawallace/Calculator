@@ -52,7 +52,7 @@ var performOperation = (clickObj) => {
             evalStringArray.push('-');
             break;
 
-        case '*':
+        case 'x':
             pendingVal = displayVal;
             displayVal = '0';
             displayValElement.innerText = displayVal;
