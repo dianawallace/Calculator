@@ -5,7 +5,7 @@ FreeCodeCamp: Front End Libraries Projects - Build a Calculator
 
 This is the fourth of the Front End Libraries Projects in Free Code Camp. The objective was to build a Javascript Calculator that meets Free Code Camp's user stories requirements.
 
-I used HTML5, CSS3, and JavaScript.
+I used HTML5, CSS3, and Vanilla JavaScript.
 
 You can find the list of requirements below as well as further information on this project here. You can view my completed project on github [here]( https://dianawallace.github.io/fcc-calculator/) and codepen [here]( https://codepen.io/dianawallacedeveloper/pen/pBGXwo).
 
